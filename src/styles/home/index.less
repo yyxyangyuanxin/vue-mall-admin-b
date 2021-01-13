@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+
+    .left-menu {
+        position: fixed;
+    }
+
+    .right-container {
+        position: fixed;
+        right: 0;
+        height: 100%;
+
+        .router-view {
+            position: relative;
+            top: 50px;
+            right: 0;
+            width: calc(100vw - 180px);
+            &.max-width {
+                width: calc(100vw - 64px);
+            }
+        }
+    }
+}

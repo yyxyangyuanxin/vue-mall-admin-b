@@ -1,0 +1,51 @@
+.wrapper {
+    width: calc(100vw - 180px);
+    border-bottom: 1px #ececec solid;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &.max-width {
+        width: calc(100vw - 64px);
+    }
+
+    .show-btn {
+        margin-top: 8.5px;
+        margin-left: 10px;
+    }
+
+    .ant-breadcrumb {
+        margin-top: 14px;
+        margin-left: 20px;
+    }
+
+    .user-info {
+        position: absolute;
+        right: 40px;
+
+        .user-info-item {
+            cursor: pointer;
+
+            .exit-btn {
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                z-index: 999;
+                opacity: 0;
+                top: 0;
+                transition: all 0.8s;
+                -webkit-transition: all 1s;
+                &:hover {
+                    color: #f40;
+                }
+            }
+
+            &:hover .exit-btn {
+                top: 50px;
+                opacity: 1;
+            }
+        }
+    }
+}
